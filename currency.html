@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Exchange</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input id="amt" type="value"></td>
+            <td><select id="fcr">
+                    <option value="23000">VNĐ</option>
+                    <option value="1">USD</option>
+            </select>
+            </td>
+            <td>
+                <select id="tcr">
+                    <option value="1">USD</option>
+                    <option value="23000">VNĐ</option>
+            </select></td>
+            <td><button onclick="chuyenTien()">Convert</button></td>
+        </tr>
+    </table>
+
+Result: <div id="result"></div>
+</body>
+<script src="currency.js"></script>
+</html>
